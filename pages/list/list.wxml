@@ -1,0 +1,33 @@
+<view class="flex_row width_100 height_100 scroll_x margin_top_50">
+  <view class="flex_row margin_left_40">
+    <view class="white bolder text_25 margin_right_30 up_to_down_inf">街拍</view>
+    <view wx:for="{{portfolio}}" wx:if="{{portfolio_item.type===0}}" wx:for-item="portfolio_item" class="down_to_up flex_column margin_top_30 align_center portfolio_container">
+      <image mode="widthFix" src="{{portfolio_item.cover}}" class="img" bindtap="go2detail" data-id="{{portfolio_item.id}}"/>
+      <view class="flex_1" />
+      <view class="white text_12 bolder">《{{portfolio_item.name}}》</view>
+       <view class="white text_12 bolder margin_top_16 desc" bindtap="showDesc" data-desc="{{portfolio_item.desc}}">点击查看注解</view>
+    </view>
+  </view>
+  <view class="flex_row margin_left_40">
+    <view class="white bolder text_25 margin_right_30 up_to_down_inf">思考</view>
+    <view wx:for="{{portfolio}}" wx:if="{{portfolio_item.type===1}}" wx:for-item="portfolio_item" class="down_to_up flex_column margin_top_30 align_center portfolio_container">
+      <image mode="widthFix" src="{{portfolio_item.cover}}" class="img" bindtap="go2detail" data-id="{{portfolio_item.id}}"/>
+      <view class="flex_1" />
+      <view class="white text_12 bolder">《{{portfolio_item.name}}》</view>
+    </view>
+  </view>
+  <view class="flex_row margin_left_40">
+    <view class="white bolder text_25 margin_right_30 up_to_down_inf">人像</view>
+    <view wx:for="{{portfolio}}" wx:if="{{portfolio_item.type===2}}" wx:for-item="portfolio_item" class="down_to_up flex_column margin_top_30 align_center portfolio_container">
+      <image mode="widthFix" src="{{portfolio_item.cover}}" class="img" bindtap="go2detail" data-id="{{portfolio_item.id}}"/>
+      <view class="flex_1" />
+      <view class="white text_12 bolder">《{{portfolio_item.name}}》</view>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{show}}" class="toastBack" bindtap="hideDesc"/>
+<view wx:if="{{show}}" class="flex_column align_center desc_container small_to_big">
+  <text class="text_12 margin_bottom_16">照片集说明</text>
+  <text class="text_12">{{desc}}</text>
+</view>

@@ -1,0 +1,62 @@
+/**index.wxss**/
+page{
+  background: #222222;
+}
+.landscape_text{
+  width: 25px;
+  margin-left: 10px;
+}
+.enter{
+  width: 75px;
+  height: 75px;
+  border: 1px solid white;
+  margin-top: 60px;
+}
+@keyframes left_to_right {
+  0% {
+    transform:translate(-200px, 0);
+  }
+  100% {
+    transform:translate(0px, 0);
+  }
+}
+@keyframes up_to_down {
+  0% {
+    transform:translate(0, -200px);
+  }
+  100% {
+    transform:translate(0, 0);
+  }
+}
+@keyframes down_to_up {
+  0% {
+    transform:translate(0, 200px);
+  }
+  100% {
+    transform:translate(0, 0);
+  }
+}
+.left_to_right{
+  -webkit-animation-name: left_to_right;
+  animation-name: left_to_right;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.up_to_down{
+  -webkit-animation-name: up_to_down;
+  animation-name: up_to_down;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.down_to_up{
+  -webkit-animation-name: down_to_up;
+  animation-name: down_to_up;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}

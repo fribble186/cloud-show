@@ -1,0 +1,29 @@
+/**index.wxss**/
+page{
+  background: #222222;
+}
+.landscape_text{
+  width: 25px;
+  margin-left: 10px;
+}
+.next{
+  border: 1px solid white;
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+@keyframes small_to_big {
+  0% {
+    transform:scale(0);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+.small_to_big{
+  -webkit-animation-name: small_to_big;
+  animation-name: small_to_big;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}

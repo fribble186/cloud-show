@@ -1,0 +1,21 @@
+<view class="flex_column height_100 width_100">
+  <view class="flex_row margin_top_50 margin_right_30 margin_left_30">
+    <view class="flex_column left_to_right">
+      <view class="white bolder text_25">2020 ONLINE</view>
+      <view class="white bolder text_25">FRIBBLE</view>
+      <view class="white bolder text_25">PHOTOGRAPHIC EXHIBITION</view>
+    </view>
+    <view class="flex_1" />
+    <view class="flex_row up_to_down">
+      <view class="white bolder text_25 landscape_text">云摄影展</view>
+      <view class="white bolder text_25 landscape_text">de私人</view>
+      <view class="white bolder text_25 landscape_text">无聊</view>
+    </view>
+  </view>
+  <view class="flex_row center">
+    <view class="flex_column center enter down_to_up" bindtap="go2me">
+      <text class="white bolder">进入观展</text>
+      <text class="white bolder">ENTER</text>
+    </view>
+  </view>
+</view>

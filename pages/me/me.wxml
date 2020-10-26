@@ -1,0 +1,27 @@
+<view class="flex_column height_100 width_100">
+  <view class="white bolder text_25 margin_top_30 margin_left_40">序章</view>
+  <view class="flex_1 flex_row margin_left_40 margin_top_16 margin_right_30">
+    <view class="flex_1 flex_column width_100 margin_right_16">
+      <view class="white bolder">展览简介</view>
+      <view class="flex_column white text_12 margin_top_16" style="line-height: 30px">
+        <text>本次展览以云的方式展出我个人的部分摄影作品</text>
+        <text>当中有数码有胶片，有街拍有人像，有糖水也有对摄影的思考</text>
+        <text>希望大家看完，也能在评论区表达自己对某张照片的看法</text>
+        <text>喜欢或不喜欢</text>
+        <text>最后衷心感谢大家参加这次云展览</text>
+      </view>
+    </view>
+    <view class="flex_1 flex_column width_100 margin_left_16">
+      <view class="white bolder">作者自述</view>
+      <view class="flex_column white text_12 margin_top_16" style="line-height: 30px">
+        <text>自己说不上是个摄影师，顶多算个爱好者</text>
+        <text>自己接触摄影也有8个年头了，从当初的一窍不通，到现在的能拍出一些自己想法的照片</text>
+        <text>自知自己在现实中可能也挨不上办展的水平，但很想和大家分享自己所拍的，所以在网络这片角落，我“举办”了这次展览</text>
+        <view class="flex_row white bolder" bindtap="go2list">
+          <view class="flex_1" />
+          <view class="next small_to_big">进入下一章</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

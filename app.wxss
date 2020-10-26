@@ -1,0 +1,91 @@
+/**app.wxss**/
+.width_100{
+  width: 100%;
+}
+.height_100{
+  height: 100%;
+}
+.top_height{
+  margin-top: 160rpx;
+}
+.blank_button{
+  padding:0;
+  margin:0;
+  flex-direction: column;
+  background-color: transparent;
+  border:none;
+  box-shadow: none;
+  border-radius: 0rpx;
+}
+.blank_button::after {
+  border: none;
+}
+
+.bolder{
+  font-weight: bolder;
+}
+.white{
+  color: #fbfbfb;
+}
+
+.text_25{
+  font-size: 25px;
+}
+.text_12{
+  font-size: 12px;
+}
+
+.flex_row{
+  display: flex;
+  flex-direction: row
+}
+.flex_column{
+  display: flex;
+  flex-direction: column
+}
+.flex_1{
+  flex: 1
+}
+.center{
+  align-items: center;
+  justify-content: center
+}
+.align_center{
+  align-items: center
+}
+.align_end{
+  align-items: flex-end
+}
+.justify_center{
+  justify-content: center
+}
+.margin_top_50{
+  margin-top:50px;
+}
+.margin_left_40{
+  margin-left:40px;
+}
+.margin_top_30{
+  margin-top:30px;
+}
+.margin_right_30{
+  margin-right:30px;
+}
+.margin_bottom_30{
+  margin-bottom:30px;
+}
+.margin_left_30{
+  margin-left:30px;
+}
+.margin_top_16{
+  margin-top:16px;
+}
+.margin_right_16{
+  margin-right:16px;
+}
+.margin_bottom_16{
+  margin-bottom:16px;
+}
+.margin_left_16{
+  margin-left:16px;
+}

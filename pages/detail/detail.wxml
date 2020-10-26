@@ -1,0 +1,12 @@
+<view class="flex_column height_100  width_100 scroll_x">
+  <view class="flex_row margin_left_30 align_center" bindtap="goBack">
+    <image mode="widthFix" src="/img/back.png" class="back"/>
+    <view class="white bolder text_25 margin_left_16 margin_top_30 margin_bottom_30">{{portfolio.name}}</view>
+  </view>
+  <view class="flex_row margin_left_40">
+    <view class="flex_column align_center margin_right_30" wx:for="{{portfolio.photo_portfolio}}" wx:for-item="photo">
+      <image mode="widthFix" src="{{photo.source}}" class="img" bindtap="preview" data-src="{{photo.source}}"/>
+      <image mode="widthFix" src="/img/like.png" class="like margin_top_16" bindtap="preview" data-src="{{photo.source}}"/>
+    </view>
+  </view>
+</view>
